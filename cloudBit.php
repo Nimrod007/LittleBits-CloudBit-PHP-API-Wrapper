@@ -1,7 +1,7 @@
 <?php
-function sendToCloudBit($cloudBitKey, $deviceId, $durationInMillis, $valueType, $value){
+function sendToCloudBit($cloudBitKey, $deviceId, $durationInMillis, $value){
 	$url = "https://api-http.littlebitscloud.cc/v3/devices/$deviceId/output";
-	$data = array($valueType => $value, 'duration_ms' => $durationInMillis);
+	$data = array('percent' => $value, 'duration_ms' => $durationInMillis);
 	
 	$options = array(
 			'http' => array(
