@@ -1,7 +1,7 @@
 # LittleBits-CoudBit-PHP-Wrapper
 a Simple PHP wrapper for your cloudBit.
 
-Sending commands to your cloudBit made easy with PHP function
+Sending commands to your cloudBit made easy with PHP function & intergration with Yahoo Weather API
 
 Usage :
 ```php 
