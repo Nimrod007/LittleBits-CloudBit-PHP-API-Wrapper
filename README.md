@@ -19,7 +19,7 @@ include 'yahooWeather.php';
 $city = "tel aviv";
 $countryCode = "il";
 $isFahrenheit = false;
-$temp = getTemperatureFor($city, "$countryCode, $isFahrenheit);
+$temp = getTemperatureFor($city, $countryCode, $isFahrenheit);
 sendToCloudBit($cloudBitKey, $deviceId, $durationInMillis, $temp);
 ```
 
