@@ -6,6 +6,7 @@ Sending commands to your cloudBit made easy with PHP function & intergration wit
 Usage :
 ```php 
 <?php
+include 'cloudBit.php';
 //send command to CloudBit example:
 $cloudBitKey = 'YOUR-CLOUDBIT-KEY';
 $deviceId = 'YOUR-CLOUDBIT-ID';
@@ -14,6 +15,7 @@ $value = 99; //(this is the value sent to the bit 0-100)
 sendToCloudBit($cloudBitKey, $deviceId, $durationInMillis, $value);
 
 //send temp to cloudBit from Yahoo
+include 'yahooWeather.php';
 $city = "tel aviv";
 $countryCode = "il";
 $isFahrenheit = false;
