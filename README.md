@@ -27,7 +27,7 @@ sendToCloudBit($cloudBitKey, $deviceId, $durationInMillis, $temp);
 //get application error rate from relic to cloudbit
 include 'newRelic.php';
 $appId = 90210; //new relic's application id
-$relicKey = 'XXX'; // new relic's seacret key
+$relicKey = 'XXX'; // new relic's secret key
 $timePicker = 30; //time to measure error rate for (this is now - 30 minutes)
 $errorRate = getMetricFromRelic($relicKey, $appId, $timePicker);
 sendToCloudBit($cloudKitKey, $deviceId, $durationInMillis, $errorRate);
