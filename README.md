@@ -1,11 +1,10 @@
 # LittleBits-CloudBit-API-PHP-Wrapper
-a Simple PHP wrapper for your cloudBit API.
 
-Sending commands to your cloudBit made easy with PHP function
+* a Simple PHP wrapper for your cloudBit API.
+* Sending commands to your cloudBit made easy with PHP function
+* intergration with Yahoo Weather API & New Relic
 
--intergration with Yahoo Weather API & New Relic
-
-Usage :
+###Usage :
 ```php 
 <?php
 include 'cloudBit.php';
@@ -32,4 +31,6 @@ $timePicker = 30; //time to measure error rate for (this is now - 30 minutes)
 $errorRate = getMetricFromRelic($relicKey, $appId, $timePicker);
 sendToCloudBit($cloudKitKey, $deviceId, $durationInMillis, $errorRate);
 ```
+
+####more stuff - visit my blog : www.nimrodstech.com
 
